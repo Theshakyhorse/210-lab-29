@@ -1,0 +1,19 @@
+Overview:
+My project creates an online multiplayer game world simulation, a program designed to model 
+how different regions in a virtual game world change over time. This software illustrates how players, 
+non-player characters (NPCs), and in-game items change and interact across multiple regions as time passes.
+
+Implementation:
+I plan to use a std::map to store and manage data related to different regions in the game world. 
+Each region will act as a key in the map, and the value will be a std::array containing three std::lists. 
+These lists will represent players, NPCs, and items within that region.
+
+One map entry would represent a forest region, where the three lists store all active players, 
+NPCs (such as monsters or merchants), and items (such as weapons or potions) currently in that area. 
+Another entry would be for a desert region, and another a snow region, each maintaining its own 
+separate sets of entities.
+
+Simulated events:
+The simulation will focus on three events: player movement between regions; spawning and despawning of NPCs; and 
+item generation or removal. At any given time period, players may travel to new regions, NPCs may appear or be defeated, 
+and items may be created or consumed.
