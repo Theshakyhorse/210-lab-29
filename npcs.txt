@@ -1,100 +1,51 @@
-Liam
-Ava
-Noah
-Emma
-Oliver
-Sophia
-Elijah
-Isabella
-Lucas
-Mia
-Mason
-Charlotte
-Ethan
-Amelia
-Logan
-Harper
-James
-Evelyn
-Benjamin
-Abigail
-Jacob
-Emily
-Michael
-Elizabeth
-Daniel
-Sofia
-Henry
-Avery
-Jackson
-Ella
-Sebastian
-Scarlett
-Aiden
-Grace
-Matthew
-Chloe
-Samuel
-Victoria
-David
-Riley
-Joseph
-Aria
-Carter
-Nora
-Owen
-Zoey
-Wyatt
-Hannah
-John
-Lily
-Luke
-Stella
-Jayden
-Natalie
-Dylan
-Leah
-Isaac
-Hazel
-Gabriel
-Aurora
-Anthony
-Savannah
-Julian
-Audrey
-Christopher
-Brooklyn
-Joshua
-Bella
-Andrew
-Claire
-Lincoln
-Skylar
-Ryan
-Lucy
-Nathan
-Violet
-Aaron
-Maya
-Thomas
-Naomi
-Charles
-Eliana
-Isaiah
-Sarah
-Adam
-Kennedy
-Miles
-Ivy
-Leo
-Allison
-Eli
-Madeline
-Jonathan
-Piper
-Christian
-Autumn
-Hunter
-Ruby
-Connor
-Sadie
+Forest Goblin
+Forest Wolf
+Desert Scorpion
+Desert Bandit
+Town Merchant
+Town Guard
+Forest Bear
+Desert Snake
+Town Blacksmith
+Forest Fox
+Desert Raider
+Town Trader
+Forest Boar
+Desert Nomad
+Town Bard
+Forest Deer
+Desert Thief
+Town Priest
+Forest Owl
+Desert Lizard
+Town Guard2
+Forest Spider
+Desert Raider2
+Town Merchant2
+Forest Hawk
+Desert Bandit2
+Town Guard3
+Forest Snake
+Desert Scorpion2
+Town Trader2
+Forest Wolf2
+Desert Nomad2
+Town Bard2
+Forest Bear2
+Desert Thief2
+Town Priest2
+Forest Fox2
+Desert Snake2
+Town Guard4
+Forest Owl2
+Desert Lizard2
+Town Merchant3
+Forest Spider2
+Desert Raider3
+Town Trader3
+Forest Hawk2
+Desert Bandit3
+Town Guard5
+Forest Wolf3
+Desert Nomad3
+Town Bard3

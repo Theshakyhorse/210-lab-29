@@ -1,91 +1,51 @@
-Health Potion
-Mana Potion
-Stamina Potion
-Antidote
-Elixir of Strength
-Elixir of Wisdom
-Bandages
-Herbal Remedy
-Phoenix Feather
-Revival Scroll
-Iron Sword
-Steel Sword
-Enchanted Blade
-Dagger
-Poison Dagger
-Warhammer
-Battle Axe
-Longbow
-Crossbow
-Magic Staff
-Wizard Wand
-Shield
-Tower Shield
-Leather Armor
-Chainmail Armor
-Plate Armor
-Cloak of Invisibility
-Ring of Protection
-Amulet of Power
-Boots of Speed
-Gloves of Dexterity
-Helmet of Insight
-Fire Scroll
-Ice Scroll
-Lightning Scroll
-Teleport Scroll
-Lockpick Kit
-Torch
-Lantern
-Rope
-Grappling Hook
-Pickaxe
-Fishing Rod
-Spell Book
-Map
-Compass
-Gold Coins
-Silver Coins
-Gemstones
-Treasure Chest
-Key
-Ancient Relic
-Crystal Ball
-Magic Rune
-Soul Gem
-Dragon Scale
-Monster Fang
-Herbs
-Mushrooms
-Flask of Oil
-Bomb
-Smoke Bomb
-Throwing Knife
-Trap Kit
-Cursed Idol
-Holy Water
-Blessed Charm
-Enchanted Ring
-Battle Standard
-Horn of Calling
-Scroll of Identify
-Scroll of Enchanting
-Scroll of Summoning
-Pet Whistle
-Mount Saddle
-Magic Carpet
-Portal Stone
-Timepiece
-Alchemy Kit
-Cooking Kit
-Rations
-Water Skin
-Tent
-Bedroll
-Spyglass
-Quiver of Arrows
-Bolt Pack
-Rune Stone
-Charm Bracelet
-Energy Crystal
-Mystic Orb
+Forest Sword
+Forest Potion
+Desert Water
+Desert Dagger
+Town Shield
+Town Bread
+Forest Bow
+Desert Cloak
+Town Ring
+Forest Arrow
+Desert Map
+Town Lute
+Forest Staff
+Desert Boots
+Town Scroll
+Forest Shield
+Desert Knife
+Town Hammer
+Forest Orb
+Desert Flask
+Town Gem
+Forest Axe
+Desert Armor
+Town Helmet
+Forest Spear
+Desert Sandals
+Town Gloves
+Forest Wand
+Desert Compass
+Town Lantern
+Forest Crystal
+Desert Bottle
+Town Key
+Forest Rope
+Desert Tent
+Town Coin
+Forest Herb
+Desert Spice
+Town Book
+Forest Mushroom
+Desert Oil
+Town Torch
+Forest Gemstone
+Desert Relic
+Town Charm
+Forest Feather
+Desert Bone
+Town Scroll2
+Forest Stone
+Desert Dust
+Town Idol

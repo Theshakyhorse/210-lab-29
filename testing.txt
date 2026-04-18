@@ -1,0 +1,5 @@
+We will test the simulateWorld function independently. I will create a small test map with one region.
+I will add one player, one NPC, and one item. I will call simulateWorld with a small number of 
+ticks (e.g., 3). I will verify no that there are no errors and that the lists update correctly
+(items removed, NPCs added, players moved). I will also look at the cases where there are
+empty lists, single-element lists, multiple ticks modifying same region

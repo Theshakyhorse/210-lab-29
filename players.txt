@@ -1,100 +1,51 @@
-ShadowBlitz27
-NeonFalconX
-FrostByte99
-IronClutch
-PixelWarden
-RogueCircuit
-NovaStriker
-SilentVortex
-EmberSniper
-PhantomGlide
-TurboHex
-MysticReboot
-DarkPulse77
-QuantumFury
-DriftKnight
-LunarSwitch
-CyberRogueX
-StaticHunter
-ApexGhoul
-SolarFang
-EchoBandit
-VoidTactician
-AlphaSpecter
-HyperNexus
-RiftCrawler
-BlazeNomad
-ToxicHalo
-GlitchSamurai
-SteelPhantom
-OmegaTrace
-ArcticViper
-NanoReaper
-FlashOrbit
-VenomCipher
-TitanGhost
-PixelRaider
-ZenithHawk
-PulseRanger
-PhantomCrate
-CyberDrifter
-IronNova
-StormCrafter
-WarpSnare
-FrostNovaX
-EmberWarden
-HexBlade77
-NovaRevenant
-RiftSniper
-CrimsonByte
-GhostSurge
-TurboKnight
-VortexSlayer
-StaticGhost
-QuantumKnight
-BlazeVector
-ShadowPulse
-ApexRider
-SilentFang
-LunarHunter
-VenomStrike
-SteelBlitz
-PixelPhantom
-OmegaDrift
-NeonGhostX
-DarkOrbit
-RiftPhantom
-NovaSlayer
-CyberFang
-FlashSpecter
-TitanVortex
-EchoRider
-WarpHunter
-ArcticPhantom
-HexRogue
-MysticViper
-GlitchHunter
-StormFang
-PulseBlade
-QuantumGhost
-EmberTrace
-ApexPhantom
-NanoHunter
-VoidBlazer
-FrostHunterX
-RogueSpecter
-SolarReaper
-PhantomNova
-CyberWarden
-DriftGhost
-ToxicKnight
-ZenithBlade
-StaticFury
-CrimsonPhantom
-IronHunterX
-WarpGhost
-PixelKnight
-NovaCipher
-ShadowRider
-BlazeSpecter
-OmegaKnight
+Forest Liam
+Forest Noah
+Desert Ava
+Desert Emma
+Town Mason
+Town Olivia
+Forest Aiden
+Desert Harper
+Town Elijah
+Forest Henry
+Desert Jack
+Town Daniel
+Forest Sebastian
+Desert Carter
+Town Jayden
+Forest Isaac
+Desert Julian
+Town Grayson
+Forest Leo
+Desert Ezra
+Town Hudson
+Forest Owen
+Desert Luke
+Town Dylan
+Forest Gabriel
+Desert Wyatt
+Town Levi
+Forest Logan
+Desert Ethan
+Town Lucas
+Forest James
+Desert Benjamin
+Town Alexander
+Forest Michael
+Desert Daniel
+Town Matthew
+Forest Joseph
+Desert David
+Town Andrew
+Forest Joshua
+Desert Christopher
+Town Anthony
+Forest Ryan
+Desert Nicholas
+Town Tyler
+Forest Brandon
+Desert Aaron
+Town Zachary
+Forest Kevin
+Desert Justin
+Town Eric
