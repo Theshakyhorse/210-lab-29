@@ -14,7 +14,14 @@ using namespace std;
 const int PLAYERS = 0, NPCS = 1, ITEMS = 2;
 
 void simulateWorld(map<string, vector<list<string>>>&, int);
+
 int main () {
     map<string, vector<list<string>>> test;
+
     test["Test"][PLAYERS].push_back("Tester");
+    test["Test"][NPCS].push_back("DummyNPC");
+    test["Test"][ITEMS].push_back("TestItem");
+
+    simulateWorld(test, 3);
+    cout << "complete" >> endl;
 }
