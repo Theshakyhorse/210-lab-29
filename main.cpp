@@ -21,35 +21,53 @@ int main() {
 
     if (fin.good()) {
         while (fin >> region >> name) {
+            world[region].resize(3);
             world[region][PLAYERS].push_back(name);
         }
         fin.close();
     }
     else {
-        cout << "Input file not found." << endl;
+        cout << "player file not found." << endl;
     }
 
     if (fin2.good()) {
         while (fin2 >> region >> name) {
+            world[region].resize(3);
             world[region][NPCS].push_back(name);
         }
         fin2.close();
     }
     else {
-        cout << "Input file not found." << endl;
+        cout << "npc file not found." << endl;
     }
 
     if (fin3.good()) {
         while (fin3 >> region >> name) {
+            world[region].resize(3);
             world[region][ITEMS].push_back(name);
         }
         fin3.close();
     }
     else {
-        cout << "Input file not found." << endl;
+        cout << "item file not found." << endl;
     }
 
     simulateWorld(world, 3);
     
     return 0;
+}
+
+void simulateWorld(map<string, vector<list<string>>>& world, int ticks) {
+    for (int t = 1; t <= ticks; t++) {
+        cout << "tick " << t << endl;
+        for (auto& pair : world) {
+            string region = pair.first;
+            auto& data = pair.second;
+
+            int change = rand() % 3;
+            if (change == 0) {
+                
+            }
+        }
+    }
 }
