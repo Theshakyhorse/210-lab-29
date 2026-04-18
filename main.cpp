@@ -52,8 +52,26 @@ int main() {
         cout << "item file not found." << endl;
     }
 
+    cout << "Initial state" << endl;
+    for (auto& pair : world) {
+        cout << "Region: " << pair.first << endl;
+
+        cout << "Players: ";
+        for (auto& p : pair.second[PLAYERS]) {
+            cout << p << " ";
+        }
+        cout << endl << "NPCS: ";
+        for (auto& n : pair.second[NPCS]) {
+            cout << n << " ";
+        }
+        cout << endl << "Items: ";
+        for (auto& i : pair.second[ITEMS]) {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+
     simulateWorld(world, 3);
-    
     return 0;
 }
 
@@ -75,7 +93,8 @@ void simulateWorld(map<string, vector<list<string>>>& world, int ticks) {
                 cout << "Item removed from " << region << endl;
             }
             if (change == 2) {
-                
+                cout << data[PLAYERS].front() << " left " << region << endl;
+                data[PLAYERS].pop_front();
             }
         }
     }
