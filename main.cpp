@@ -66,6 +66,15 @@ void simulateWorld(map<string, vector<list<string>>>& world, int ticks) {
 
             int change = rand() % 3;
             if (change == 0) {
+                string npc = "NPC " +to_string(rand()%100);
+                data[NPCS].push_back(npc);
+                cout << npc << " spawned in " << region << endl;
+            }
+            if (change == 1) {
+                data[ITEMS].pop_front();
+                cout << "Item removed from " << region << endl;
+            }
+            if (change == 2) {
                 
             }
         }
