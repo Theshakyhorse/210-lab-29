@@ -1,4 +1,5 @@
-// COMSC-210 | Lab 30 | Alexander Sierra
+// COMSC-210 | Lab 31 | Alexander Sierra
+//forgot to change 30 to 31 for beta
 #include <iostream>
 #include <map>
 #include <list>
