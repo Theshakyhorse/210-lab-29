@@ -1,0 +1,38 @@
+1. this was not necessarily a bug but the coding conventions of this course were violated
+because I passed things by reference when they were not changed so it created processing 
+overhead. I also forgot to add comments
+
+2. I realized that sometimes there are npc's that spawn with the same exact
+name in the same region but are not the same npc because the name is random
+I fixed this by naming the npcs by the tick. Sure there will be npcs with
+the same name but they will be located in different regions
+
+3. For simulate world function, I had thought about an empty world before but I thought 
+that it made no sense to account for a world where there were no players and/or 
+no items since no world would be created then. However there is a chance that a world 
+with a small amount of players and a small amount of items to break the program because there 
+are no more items or players to remove. I fixed this by taking seeing if they have players 
+and items to remove, basically checking if they are not empty, then outputting that they are
+
+4. Output issue, some names of npcs are named wolf1 where the number has no space between name, 
+so I can fix this by altering the output so they all don't have spaces or they all do. 
+It was easier to remove the spaces so I changed cout to not have a space
+
+5. Becuase change can only ever be 0, 1, or 2 one of the random actions must happen, which makes
+it feel not very random since I believe that, so I fixed this by increasing what change can be to 0-5
+
+6. I was rechecking requirements for project to see if I can find some issue, and techinically 
+a game world is not in real life, though it may be in my life but I don't want to risk not meeting the 
+requirements so I am changing the context to be a regions in a country simulation where players are citizens, 
+NPCS are immigrants, and items are supplies
+
+7. I changed issue 4 so that I fixed it by adding a space between immigrant and the number
+
+8. immigrants can be blank after the final state of country is output. I fixed it by showing that initial has 
+none by being blank instead of outputting none so if it is blank at the end then it doesn't look like it failed
+
+9. immigrants is broken, I realized I had this line data[IMMIGRANTS].push_back(immigrant) as 
+data[CITIZENS].push_back(immigrant) which is wrong, so I fixed it
+
+10. some supplies are literally in the file as supplies or other vagues things that are not actually supplies
+and I found that weird how supplies is under supplies so I changed the supplies file to have less vague stuff
