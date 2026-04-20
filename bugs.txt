@@ -1,5 +1,10 @@
-1. this was not a bug but the coding conventions of this course were violated
+1. this was not necessarily a bug but the coding conventions of this course were violated
 because I passed things by reference when they were not changed so it created
 processing overhead. I also forgot to add comments
 
-2.
+2. I realized that sometimes there are npc's that spawn with the same exact
+name in the same region but are not the same npc because the name is random
+I fixed this by naming the npcs by the tick. Sure there will be some npcs with
+the same name but they will be located in different regions
+
+3.
