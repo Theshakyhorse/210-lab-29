@@ -21,4 +21,8 @@ It was easier to remove the spaces so I changed cout to not have a space
 5. Becuase change can only ever be 0, 1, or 2 one of the random actions must happen, which makes
 it feel not very random since I believe that, so I fixed this by increasing what change can be to 0-5
 
-6.
+6. I was rechecking requirements for project to see if I can find some issue, and techinically 
+a game world is not in real life, though it may be in my life but I don't want to risk not meeting the 
+requirements so I am changing the context to be a city simulation
+
+7.
