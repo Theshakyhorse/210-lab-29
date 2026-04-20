@@ -14,8 +14,11 @@ with a small amount of players and a small amount of items to break the program 
 are no more items or players to remove. I fixed this by taking seeing if they have players 
 and items to remove, basically checking if they are not empty, then outputting that they are
 
-4. Output issue, some names of npcs are named wolf1 where the number has no space between name, so I can change
-this by altering the output so they all don't have spaces or they all do. It was easier to remove
-the spaces so I changed cout to not have a space
+4. Output issue, some names of npcs are named wolf1 where the number has no space between name, 
+so I can fix this by altering the output so they all don't have spaces or they all do. 
+It was easier to remove the spaces so I changed cout to not have a space
 
-5.
+5. Becuase change can only ever be 0, 1, or 2 one of the random actions must happen, which makes
+it feel not very random since I believe that, so I fixed this by increasing what change can be to 0-5
+
+6.

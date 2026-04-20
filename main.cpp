@@ -109,7 +109,7 @@ void simulateWorld(map<string, vector<list<string>>>& world, int ticks) {
             auto& data = pair.second;
 
             //random actions that could happen
-            int change = rand() % 3;
+            int change = rand() % 6;
             if (change == 0) {
                 string npc = "NPC" +to_string(t);
                 data[NPCS].push_back(npc);
