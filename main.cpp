@@ -116,12 +116,18 @@ void simulateWorld(map<string, vector<list<string>>>& world, int ticks) {
                 cout << npc << " spawned in " << region << endl;
             }
             else if (change == 1) {
-                data[ITEMS].pop_front();
-                cout << "Item removed from " << region << endl;
+                if (!data[ITEMS].empty()) {
+                    data[ITEMS].pop_front();
+                    cout << "Item removed from " << region << endl;
+                }
+                else {cout << region << " has no items";}
             }
             else if (change == 2) {
-                cout << data[PLAYERS].front() << " left " << region << endl;
-                data[PLAYERS].pop_front();
+                if (!data[PLAYERS].empty()) {
+                    cout << data[PLAYERS].front() << " left " << region << endl;
+                    data[PLAYERS].pop_front();
+                }
+                else {cout << region << " has no players";}
             }
         }
     }

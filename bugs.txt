@@ -1,10 +1,17 @@
 1. this was not necessarily a bug but the coding conventions of this course were violated
-because I passed things by reference when they were not changed so it created
-processing overhead. I also forgot to add comments
+because I passed things by reference when they were not changed so it created processing 
+overhead. I also forgot to add comments
 
 2. I realized that sometimes there are npc's that spawn with the same exact
 name in the same region but are not the same npc because the name is random
 I fixed this by naming the npcs by the tick. Sure there will be some npcs with
 the same name but they will be located in different regions
 
-3.
+3. For simulate world function, I had thought about an empty world before but I thought 
+that it made no sense to account for a world where there were no players and/or 
+no items since no world would be created then. However there is a chance that a world 
+with a small amount of players and a small amount of items to break the program because there 
+are no more items or players to remove. I fixed this by taking seeing if they have players 
+and items to remove, basically checking if they are not empty, then outputting that they are
+
+4.
