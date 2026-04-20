@@ -5,7 +5,7 @@ Desert Tools
 Town Food
 Town Clothing
 Forest Berries
-Desert Supplies
+Desert Rations
 Town Medicine
 Forest Timber
 Desert Maps
@@ -25,13 +25,13 @@ Town Helmets
 Forest Tools
 Desert Sandals
 Town Gloves
-Forest Supplies
+Forest Rope
 Desert Compass
 Town Lanterns
 Forest Minerals
 Desert Bottles
 Town Keys
-Forest Rope
+Forest Fiber
 Desert Tents
 Town Currency
 Forest Medicine

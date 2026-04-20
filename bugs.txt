@@ -28,9 +28,11 @@ NPCS are immigrants, and items are supplies
 
 7. I changed issue 4 so that I fixed it by adding a space between immigrant and the number
 
-8. immigrants can be blank after the final state of country is output. I fixed it by showing that initial has none by being
-blank instead of outputting none so if it is blank at the end then it doesn't look like it failed
+8. immigrants can be blank after the final state of country is output. I fixed it by showing that initial has 
+none by being blank instead of outputting none so if it is blank at the end then it doesn't look like it failed
 
-9. immigrants is broken (will fix)
+9. immigrants is broken, I realized I had this line data[IMMIGRANTS].push_back(immigrant) as 
+data[CITIZENS].push_back(immigrant) which is wrong, so I fixed it
 
-unfortunately I did not do an entry 10
+10. some supplies are literally in the file as supplies or other vagues things that are not actually supplies
+and I found that weird how supplies is under supplies so I changed the supplies file to have less vague stuff

@@ -97,7 +97,7 @@ void simulateCountry(map<string, vector<list<string>>>& country, int years) {
             int change = rand() % 6;
             if (change == 0) {
                 string immigrant = "Immigrant " +to_string(t);
-                data[CITIZENS].push_back(immigrant);
+                data[IMMIGRANTS].push_back(immigrant);
                 cout << immigrant << " has immigrated to this country and now lives in the " << region << endl;
             }
             else if (change == 1) {
