@@ -23,7 +23,14 @@ it feel not very random since I believe that, so I fixed this by increasing what
 
 6. I was rechecking requirements for project to see if I can find some issue, and techinically 
 a game world is not in real life, though it may be in my life but I don't want to risk not meeting the 
-requirements so I am changing the context to be a regions in a country simulation where players are residents, NPCS
-are immigrants, and items are supplies
+requirements so I am changing the context to be a regions in a country simulation where players are citizens, 
+NPCS are immigrants, and items are supplies
 
-7. 
+7. I changed issue 4 so that I fixed it by adding a space between immigrant and the number
+
+8. immigrants can be blank after the final state of country is output. I fixed it by showing that initial has none by being
+blank instead of outputting none so if it is blank at the end then it doesn't look like it failed
+
+9. immigrants is broken (will fix)
+
+unfortunately I did not do an entry 10

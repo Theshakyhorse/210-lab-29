@@ -51,7 +51,7 @@ int main() {
         for (auto p : pair.second[CITIZENS]) {
             cout << p << " ";
         }
-        cout << endl << "Immigrants: none";
+        cout << endl << "Immigrants:";
         cout << endl << "Supplies: ";
         for (auto i : pair.second[SUPPLIES]) {
             cout << i << " ";
