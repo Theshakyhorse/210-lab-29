@@ -1,33 +1,121 @@
-// Include necessary headers for file handling, data structures, etc.
+// COMSC-210 | Lab 30 | Alexander Sierra
+#include <iostream>
+#include <map>
+#include <list>
+#include <fstream>
+#include <vector>
+using namespace std;
 
-// Define a function to simulate game world changes over time
-    // Parameters: map of regions, number of ticks (time intervals)
+const int PLAYERS = 0, NPCS = 1, ITEMS = 2;
 
-// Define main function
-    // Initialize map to store region info (e.g., "Forest", "Desert"), each associated
-        // with an array of lists for players, NPCs, items
+void simulateWorld(map<string, vector<list<string>>>&, int);
 
-    // Open external file with initial game data
-        // Each line describes region and entity
-        // If file does not open, print an error and exit
+int main() {
+    srand(time(0));
+    map<string, vector<list<string>>> world;
 
-        // Read many entries (at least 100)
-        // Insert entities into appropriate lists
+    string region, name;
+    ifstream fin ("players.txt");
+    ifstream fin2 ("npcs.txt");
+    ifstream fin3 ("items.txt");
 
-    // Close file
+    if (fin.good()) {
+        while (fin >> region >> name) {
+            world[region].resize(3);
+            world[region][PLAYERS].push_back(name);
+        }
+        fin.close();
+    }
+    else {
+        cout << "player file not found." << endl;
+    }
 
-    // Display initial world state
+    if (fin2.good()) {
+        while (fin2 >> region >> name) {
+            world[region].resize(3);
+            world[region][NPCS].push_back(name);
+        }
+        fin2.close();
+    }
+    else {
+        cout << "npc file not found." << endl;
+    }
 
-    // Run simulation for at least 25 of ticks
-        // For each tick:
-            // Loop through regions
-                // Randomly spawn or remove players/NPCs/items
-                // Print actions (e.g., "NPC spawned in Forest")
+    if (fin3.good()) {
+        while (fin3 >> region >> name) {
+            world[region].resize(3);
+            world[region][ITEMS].push_back(name);
+        }
+        fin3.close();
+    }
+    else {
+        cout << "item file not found." << endl;
+    }
 
-            // Simulate world events:
-                // battles
-                // Loot drops
-                // Player movements
+    cout << "Initial state" << endl;
+    for (auto& pair : world) {
+        cout << "Region: " << pair.first << endl;
 
-        // Wait or pause briefly to simulate the passage of time between intervals
-// End of main function
+        cout << "Players: ";
+        for (auto& p : pair.second[PLAYERS]) {
+            cout << p << " ";
+        }
+        cout << endl << "NPCS: ";
+        for (auto& n : pair.second[NPCS]) {
+            cout << n << " ";
+        }
+        cout << endl << "Items: ";
+        for (auto& i : pair.second[ITEMS]) {
+            cout << i << " ";
+        }
+        cout << endl << endl;
+    }
+
+    simulateWorld(world, 3);
+    cout << endl;
+
+    cout << "Final state" << endl;
+    for (auto& pair : world) {
+        cout << "Region: " << pair.first << endl;
+
+        cout << "Players: ";
+        for (auto& p : pair.second[PLAYERS]) {
+            cout << p << " ";
+        }
+        cout << endl << "NPCS: ";
+        for (auto& n : pair.second[NPCS]) {
+            cout << n << " ";
+        }
+        cout << endl << "Items: ";
+        for (auto& i : pair.second[ITEMS]) {
+            cout << i << " ";
+        }
+        cout << endl << endl;
+    }
+    return 0;
+}
+
+void simulateWorld(map<string, vector<list<string>>>& world, int ticks) {
+    for (int t = 1; t <= ticks; t++) {
+        cout << "tick " << t << endl;
+        for (auto& pair : world) {
+            string region = pair.first;
+            auto& data = pair.second;
+
+            int change = rand() % 3;
+            if (change == 0) {
+                string npc = "NPC " +to_string(rand()%100);
+                data[NPCS].push_back(npc);
+                cout << npc << " spawned in " << region << endl;
+            }
+            else if (change == 1) {
+                data[ITEMS].pop_front();
+                cout << "Item removed from " << region << endl;
+            }
+            else if (change == 2) {
+                cout << data[PLAYERS].front() << " left " << region << endl;
+                data[PLAYERS].pop_front();
+            }
+        }
+    }
+}
