@@ -13,18 +13,17 @@ void simulateRegion(map<string, vector<list<string>>>&, int);
 int main() {
     srand(time(0));
     //declarations
-    map<string, vector<list<string>>> world;
+    map<string, vector<list<string>>> country;
 
     string region, name;
-    ifstream fin ("players.txt");
-    ifstream fin2 ("npcs.txt");
-    ifstream fin3 ("items.txt");
+    ifstream fin ("citizens.txt");
+    ifstream fin3 ("supplies.txt");
 
     //reading data
     if (fin.good()) {
         while (fin >> region >> name) {
-            world[region].resize(3);
-            world[region][PLAYERS].push_back(name);
+            country[region].resize(3);
+            country[region][PLAYERS].push_back(name);
         }
         fin.close();
     }
@@ -32,21 +31,10 @@ int main() {
         cout << "file not found." << endl;
     }
 
-    if (fin2.good()) {
-        while (fin2 >> region >> name) {
-            world[region].resize(3);
-            world[region][NPCS].push_back(name);
-        }
-        fin2.close();
-    }
-    else {
-        cout << "file not found." << endl;
-    }
-
     if (fin3.good()) {
         while (fin3 >> region >> name) {
-            world[region].resize(3);
-            world[region][ITEMS].push_back(name);
+            country[region].resize(3);
+            country[region][ITEMS].push_back(name);
         }
         fin3.close();
     }
@@ -54,9 +42,9 @@ int main() {
         cout << "file not found." << endl;
     }
 
-    //outputs initial state of regions
-    cout << "Initial state" << endl;
-    for (auto pair : world) {
+    //outputs initial state of country
+    cout << "Country has been established" << endl;
+    for (auto pair : country) {
         cout << "Region: " << pair.first << endl;
 
         cout << "Citizens: ";
@@ -74,24 +62,24 @@ int main() {
         cout << endl << endl;
     }
 
-    //simulates regions
-    simulateRegion(world, 3);
+    //simulates regions in country
+    simulateRegion(country, 3);
     cout << endl;
 
-    //outputs final state of regions
-    cout << "Final state" << endl;
-    for (auto pair : world) {
+    //outputs final state of country
+    cout << "Final state of the country" << endl;
+    for (auto pair : country) {
         cout << "Region: " << pair.first << endl;
 
-        cout << "Players: ";
+        cout << "Citizens: ";
         for (auto p : pair.second[PLAYERS]) {
             cout << p << " ";
         }
-        cout << endl << "NPCS: ";
+        cout << endl << "Immigrants: ";
         for (auto n : pair.second[NPCS]) {
             cout << n << " ";
         }
-        cout << endl << "Items: ";
+        cout << endl << "Supplies: ";
         for (auto i : pair.second[ITEMS]) {
             cout << i << " ";
         }
@@ -101,10 +89,10 @@ int main() {
 }
 
 //simulates a Region with time periods of years
-void simulateRegion(map<string, vector<list<string>>>& city, int years) {
+void simulateRegion(map<string, vector<list<string>>>& country, int years) {
     for (int t = 1; t <= years; t++) {
         cout << "year " << t << endl;
-        for (auto& pair : city) {
+        for (auto& pair : country) {
             string region = pair.first;
             auto& data = pair.second;
 
