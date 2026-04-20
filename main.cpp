@@ -12,6 +12,7 @@ void simulateWorld(map<string, vector<list<string>>>&, int);
 
 int main() {
     srand(time(0));
+    //declarations
     map<string, vector<list<string>>> world;
 
     string region, name;
@@ -19,6 +20,7 @@ int main() {
     ifstream fin2 ("npcs.txt");
     ifstream fin3 ("items.txt");
 
+    //reading data
     if (fin.good()) {
         while (fin >> region >> name) {
             world[region].resize(3);
@@ -52,42 +54,45 @@ int main() {
         cout << "item file not found." << endl;
     }
 
+    //outputs initial state of world
     cout << "Initial state" << endl;
-    for (auto& pair : world) {
+    for (auto pair : world) {
         cout << "Region: " << pair.first << endl;
 
         cout << "Players: ";
-        for (auto& p : pair.second[PLAYERS]) {
+        for (auto p : pair.second[PLAYERS]) {
             cout << p << " ";
         }
         cout << endl << "NPCS: ";
-        for (auto& n : pair.second[NPCS]) {
+        for (auto n : pair.second[NPCS]) {
             cout << n << " ";
         }
         cout << endl << "Items: ";
-        for (auto& i : pair.second[ITEMS]) {
+        for (auto i : pair.second[ITEMS]) {
             cout << i << " ";
         }
         cout << endl << endl;
     }
 
+    //alters world
     simulateWorld(world, 3);
     cout << endl;
 
+    //outputs final state of world
     cout << "Final state" << endl;
-    for (auto& pair : world) {
+    for (auto pair : world) {
         cout << "Region: " << pair.first << endl;
 
         cout << "Players: ";
-        for (auto& p : pair.second[PLAYERS]) {
+        for (auto p : pair.second[PLAYERS]) {
             cout << p << " ";
         }
         cout << endl << "NPCS: ";
-        for (auto& n : pair.second[NPCS]) {
+        for (auto n : pair.second[NPCS]) {
             cout << n << " ";
         }
         cout << endl << "Items: ";
-        for (auto& i : pair.second[ITEMS]) {
+        for (auto i : pair.second[ITEMS]) {
             cout << i << " ";
         }
         cout << endl << endl;
@@ -95,6 +100,7 @@ int main() {
     return 0;
 }
 
+//simulates a game world for ticks periods of time
 void simulateWorld(map<string, vector<list<string>>>& world, int ticks) {
     for (int t = 1; t <= ticks; t++) {
         cout << "tick " << t << endl;
@@ -102,6 +108,7 @@ void simulateWorld(map<string, vector<list<string>>>& world, int ticks) {
             string region = pair.first;
             auto& data = pair.second;
 
+            //random actions that could happen
             int change = rand() % 3;
             if (change == 0) {
                 string npc = "NPC " +to_string(rand()%100);

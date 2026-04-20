@@ -1,0 +1,5 @@
+1. this was not a bug but the coding conventions of this course were violated
+because I passed things by reference when they were not changed so it created
+processing overhead. I also forgot to add comments
+
+2.
