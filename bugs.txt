@@ -23,6 +23,7 @@ it feel not very random since I believe that, so I fixed this by increasing what
 
 6. I was rechecking requirements for project to see if I can find some issue, and techinically 
 a game world is not in real life, though it may be in my life but I don't want to risk not meeting the 
-requirements so I am changing the context to be a city simulation
+requirements so I am changing the context to be a regions in a country simulation where players are residents, NPCS
+are people born, and items are supplies
 
 7.

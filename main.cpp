@@ -8,7 +8,7 @@ using namespace std;
 
 const int PLAYERS = 0, NPCS = 1, ITEMS = 2;
 
-void simulateWorld(map<string, vector<list<string>>>&, int);
+void simulateRegion(map<string, vector<list<string>>>&, int);
 
 int main() {
     srand(time(0));
@@ -29,7 +29,7 @@ int main() {
         fin.close();
     }
     else {
-        cout << "player file not found." << endl;
+        cout << "file not found." << endl;
     }
 
     if (fin2.good()) {
@@ -40,7 +40,7 @@ int main() {
         fin2.close();
     }
     else {
-        cout << "npc file not found." << endl;
+        cout << "file not found." << endl;
     }
 
     if (fin3.good()) {
@@ -51,34 +51,34 @@ int main() {
         fin3.close();
     }
     else {
-        cout << "item file not found." << endl;
+        cout << "file not found." << endl;
     }
 
-    //outputs initial state of world
+    //outputs initial state of regions
     cout << "Initial state" << endl;
     for (auto pair : world) {
         cout << "Region: " << pair.first << endl;
 
-        cout << "Players: ";
+        cout << "Citizens: ";
         for (auto p : pair.second[PLAYERS]) {
             cout << p << " ";
         }
-        cout << endl << "NPCS: ";
+        cout << endl << "Immigrants: ";
         for (auto n : pair.second[NPCS]) {
             cout << n << " ";
         }
-        cout << endl << "Items: ";
+        cout << endl << "Supplies: ";
         for (auto i : pair.second[ITEMS]) {
             cout << i << " ";
         }
         cout << endl << endl;
     }
 
-    //alters world
-    simulateWorld(world, 3);
+    //simulates regions
+    simulateRegion(world, 3);
     cout << endl;
 
-    //outputs final state of world
+    //outputs final state of regions
     cout << "Final state" << endl;
     for (auto pair : world) {
         cout << "Region: " << pair.first << endl;
@@ -100,34 +100,34 @@ int main() {
     return 0;
 }
 
-//simulates a game world for ticks periods of time
-void simulateWorld(map<string, vector<list<string>>>& world, int ticks) {
-    for (int t = 1; t <= ticks; t++) {
-        cout << "tick " << t << endl;
-        for (auto& pair : world) {
+//simulates a Region with time periods of years
+void simulateRegion(map<string, vector<list<string>>>& city, int years) {
+    for (int t = 1; t <= years; t++) {
+        cout << "year " << t << endl;
+        for (auto& pair : city) {
             string region = pair.first;
             auto& data = pair.second;
 
             //random actions that could happen
             int change = rand() % 6;
             if (change == 0) {
-                string npc = "NPC" +to_string(t);
+                string npc = "Immigrant" +to_string(t);
                 data[NPCS].push_back(npc);
-                cout << npc << " spawned in " << region << endl;
+                cout << npc << " has immigrated to this country and now lives in the " << region << endl;
             }
             else if (change == 1) {
                 if (!data[ITEMS].empty()) {
                     data[ITEMS].pop_front();
-                    cout << "Item removed from " << region << endl;
+                    cout << "A supply has been removed from " << region << endl;
                 }
-                else {cout << region << " has no items";}
+                else {cout << region << " has no supplies";}
             }
             else if (change == 2) {
                 if (!data[PLAYERS].empty()) {
                     cout << data[PLAYERS].front() << " left " << region << endl;
                     data[PLAYERS].pop_front();
                 }
-                else {cout << region << " has no players";}
+                else {cout << region << " has no residents";}
             }
         }
     }
